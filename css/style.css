@@ -1,0 +1,133 @@
+
+
+html, body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    /* padding-bottom: 20px;
+    padding-top: 10px; */
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > .wrapper > .menu > ul { /* Kok dowo banget anying*/
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+
+}
+
+nav{
+    background-color: #2D4059;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo i{
+    font-size: 3rem;
+}
+
+#profile{
+    background: url("../img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    
+}
+
+.profile {
+    display: flex;
+}
+
+.profile-container-opacity{
+    background-color: #2D4059;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.profile-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.profile-container img {
+    /* display: inline; */
+    width: 180px;
+    border-radius: 100%;
+}
+
+.profile-container div {
+    margin-left: 30px;
+}
+
+.profile-container div p {
+    margin-top: 0px;
+}
+
+.profile-container div h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-container{
+    height: 700px;
+    background-color: #EA5455;
+}
+
+.project-container{
+    height: 700px;
+    background-color: #F07B3F;
+}
+
+.wrapper button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper button icon-bars{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        width: 98%;
+    }
+
+    .menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper button {
+        display: inline;
+    }
+}
